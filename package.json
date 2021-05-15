@@ -1,0 +1,12 @@
+{
+  "name": "stream1505",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bacgauden112/stream1505.git",
+  "author": "anhdq1102 <anhdq1102@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
