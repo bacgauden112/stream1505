@@ -10,9 +10,9 @@ function createMyId() {
   return id;
 }
 const config = {
-  host: "localhost",
-  port: 3000,
-  key: "peerjs",
+  host: "anhdq-call.seeplus.app",
+  path: "peer-server",
+  secure: true,
 };
 const peer = new Peer(createMyId(), config);
 console.log(peer);

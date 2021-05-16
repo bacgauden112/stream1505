@@ -1,7 +1,7 @@
 const express = require("express");
 const { ExpressPeerServer } = require("peer");
 const app = express();
-const port = 3000;
+const port = 3333;
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -14,7 +14,7 @@ const server = app.listen(port, () =>
 );
 
 const peerServer = ExpressPeerServer(server, {
-  path: "/",
+  path: "/peer-server",
 });
 
 app.use("/", peerServer);
