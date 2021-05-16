@@ -16,8 +16,7 @@ const config = {
   config: {
     iceServers: [
       {
-        url: "numb.viagenie.ca",
-        credentialType: "password",
+        url: "turn:numb.viagenie.ca",
         username: "queanhit1102@gmail.com",
         credential: "qSyTBQ7w@56zE5Q",
       },
