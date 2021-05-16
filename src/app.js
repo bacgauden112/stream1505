@@ -20,6 +20,49 @@ const config = {
         username: "queanhit1102@gmail.com",
         credential: "qSyTBQ7w@56zE5Q",
       },
+      {
+        url: "stun:stun.l.google.com:19302",
+      },
+      {
+        url: "stun:stun1.l.google.com:19302",
+      },
+      {
+        url: "stun:stun2.l.google.com:19302",
+      },
+      {
+        url: "stun:stun3.l.google.com:19302",
+      },
+      {
+        url: "stun:stun4.l.google.com:19302",
+      },
+      {
+        url: "stun:stun.ekiga.net",
+      },
+
+      {
+        url: "stun:stun.ideasip.com",
+      },
+      {
+        url: "stun:stun.rixtelecom.se",
+      },
+      {
+        url: "stun.schlund.de",
+      },
+      {
+        url: "stun:stun.stunprotocol.org:3478",
+      },
+      {
+        url: "stun:stun.voiparound.com",
+      },
+      {
+        url: "stun:stun.voipbuster.com",
+      },
+      {
+        url: "stun:stun.voipstunt.com",
+      },
+      {
+        url: "stun:stun.voxgratia.org",
+      },
     ],
   } /* Sample servers, please use appropriate ones */,
 };
