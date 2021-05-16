@@ -6,24 +6,12 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <h1 id="myId">My id: </h1>
     <video id="localStream" width="300" controls></video>
-    <script>
-        navigator.mediaDevices.getUserMedia({
-                video: true,
-                audio: false
-            })
-            .then(function (stream) {
-                var video = document.querySelector('video');
-                video.srcObject = stream;
-                video.onloadedmetadata = function (e) {
-                    video.play();
-                };
-            })
-            .catch(function (err) {
-                /* handle the error */
-            });
-    </script>
+    <video id="remoteStream" width="300" controls></video>
+    <input type="text" id="txtFriendId">
+    <button id="btnCall">Call</button>
+    <script src="bundle.js"></script>
 </body>
 
 </html>

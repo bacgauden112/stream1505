@@ -5,8 +5,17 @@
   "repository": "git@github.com:bacgauden112/stream1505.git",
   "author": "anhdq1102 <anhdq1102@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack -w",
+    "dev": "node index"
+  },
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "peer": "^0.6.1",
+    "peerjs": "^1.3.2",
+    "uid": "^2.0.0"
+  },
+  "devDependencies": {}
 }
