@@ -2,7 +2,7 @@ module.exports = (cb) => {
   navigator.mediaDevices
     .getUserMedia({
       video: true,
-      audio: false,
+      audio: true,
     })
     .then((stream) => cb(stream))
     .catch((err) => console.log(err));

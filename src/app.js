@@ -13,6 +13,12 @@ const config = {
   host: "anhdq-call.seeplus.app",
   path: "peer-server",
   secure: true,
+  config: {
+    iceServers: [
+      { url: "stun:stun1.l.google.com:19302" },
+      { url: "stun:stun2.l.google.com:19302" },
+    ],
+  } /* Sample servers, please use appropriate ones */,
 };
 const peer = new Peer(createMyId(), config);
 console.log(peer);
