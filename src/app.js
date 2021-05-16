@@ -15,8 +15,12 @@ const config = {
   secure: true,
   config: {
     iceServers: [
-      { url: "stun:stun1.l.google.com:19302" },
-      { url: "stun:stun2.l.google.com:19302" },
+      {
+        url: "numb.viagenie.ca",
+        credentialType: "password",
+        username: "queanhit1102@gmail.com",
+        credential: "qSyTBQ7w@56zE5Q",
+      },
     ],
   } /* Sample servers, please use appropriate ones */,
 };
