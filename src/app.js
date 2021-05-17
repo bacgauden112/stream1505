@@ -51,3 +51,7 @@ peer.on("call", (call) => {
     });
   });
 });
+
+$("#btnHangout").on("click", () => {
+  location.reload();
+});

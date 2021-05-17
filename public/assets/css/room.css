@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.content .call-section {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+
+.content .User-info {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+}
+
+.content h2 {
+    color: rgb(0, 0, 0);
+}
+
+
+.content .id-call {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+}
+
+.id-call .txtFriendId {
+    margin-bottom: 16px;
+    width: 100%;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.call-btn {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-evenly;
+}
+
+.call-btn button {
+    font-size: 24px;
+    font-style: italic;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    color: white;
+    width: 30%;
+    border-radius: 24px;
+}
+
+.call-btn .Connect {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.call-btn .Connect:hover {
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.24),0 12px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.4s;
+}
+
+.call-btn .Connect:active {
+    background-color: rgb(6, 112, 6);
+    transition: 0.5s;
+}
+
+.call-btn .Disconnect {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.call-btn .Disconnect:hover {
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.24),0 12px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.4s;
+} 
+
+.call-btn .Disconnect:active {
+    background-color: rgb(85, 0, 0);
+    transition: 0.5s;
+}
