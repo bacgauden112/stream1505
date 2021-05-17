@@ -3,14 +3,52 @@
 
 <head>
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <style>
+        video {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 id="myId">My id: </h1>
-    <video id="localStream" width="300" controls></video>
-    <video id="remoteStream" width="300" controls></video>
-    <input type="text" id="txtFriendId">
-    <button id="btnCall">Call</button>
+    <div class="container">
+        <h1 class="text-center">Zoom clone</h1>
+        <h6 class="text-center">author: Quang Anh Đặng</h6>
+
+        <div class="card">
+            <div class="row align-items-start">
+                <div class="col">
+                    <video id="localStream" width="90%" controls></video>
+                </div>
+                <div class="col">
+                    <video id="remoteStream" width="90%" controls></video>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <h1 id="myId">Id: </h1>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="nhập vào id người muốn gọi"
+                            id="txtFriendId">
+                    </div>
+                    <div class="col-2 d-grid gap-2">
+                        <button class="btn btn-primary " id="btnCall">Gọi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
     <script src="bundle.js"></script>
 </body>
 

@@ -16,52 +16,12 @@ const config = {
   config: {
     iceServers: [
       {
-        url: "turn:numb.viagenie.ca",
-        username: "queanhit1102@gmail.com",
-        credential: "qSyTBQ7w@56zE5Q",
+        url: "turn:turn.call.seeplus.app:5349",
+        username: "admin",
+        credential: "CLN02)&qE!S%",
       },
       {
-        url: "stun:stun.l.google.com:19302",
-      },
-      {
-        url: "stun:stun1.l.google.com:19302",
-      },
-      {
-        url: "stun:stun2.l.google.com:19302",
-      },
-      {
-        url: "stun:stun3.l.google.com:19302",
-      },
-      {
-        url: "stun:stun4.l.google.com:19302",
-      },
-      {
-        url: "stun:stun.ekiga.net",
-      },
-
-      {
-        url: "stun:stun.ideasip.com",
-      },
-      {
-        url: "stun:stun.rixtelecom.se",
-      },
-      {
-        url: "stun.schlund.de",
-      },
-      {
-        url: "stun:stun.stunprotocol.org:3478",
-      },
-      {
-        url: "stun:stun.voiparound.com",
-      },
-      {
-        url: "stun:stun.voipbuster.com",
-      },
-      {
-        url: "stun:stun.voipstunt.com",
-      },
-      {
-        url: "stun:stun.voxgratia.org",
+        url: "stun:stun.call.seeplus.app:5349",
       },
     ],
   } /* Sample servers, please use appropriate ones */,
@@ -71,16 +31,18 @@ console.log(peer);
 
 $("#btnCall").on("click", () => {
   const friendId = $("#txtFriendId").val();
+  $("video").css("display", "block");
   openStream((localStream) => {
     playVideo("localStream", localStream);
     const call = peer.call(friendId, localStream);
-    call.on("stream", (remoteStream) =>
-      playVideo("remoteStream", remoteStream)
-    );
+    call.on("stream", (remoteStream) => {
+      playVideo("remoteStream", remoteStream);
+    });
   });
 });
 
 peer.on("call", (call) => {
+  $("video").css("display", "block");
   openStream((localStream) => {
     playVideo("localStream", localStream);
     call.answer(localStream);
